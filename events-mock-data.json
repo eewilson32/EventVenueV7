@@ -1,0 +1,844 @@
+{
+  "events": [
+    {
+      "eventName": "Beethoven Symphony No. 9",
+      "category": "Concert",
+      "labels": [ "Recital" ],
+      "description": "Join us for an unforgettable evening as we present Beethoven's Symphony No. 9, one of the greatest masterpieces in classical music history! Let the sweeping melodies and triumphant Ode to Joy inspire your soul as a world-class orchestra and choir bring this iconic symphony to life. Feel the passion, the drama, and the celebration of the human spirit that has captivated audiences for centuries.",
+      "eventDetails": [
+        {
+          "date": "2024-10-05",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
+          }
+        },
+        {
+          "date": "2024-10-06",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "The Lion King",
+      "category": "Musical",
+      "labels": [ "Adventure", "Family Friendly", "Spectacle (Featured)", "Drama" ],
+      "description": "Step into the Circle of Life and witness the breathtaking magic of Disney’s The Lion King, the musical phenomenon that has captivated over 100 million people worldwide! Immerse yourself in the African savanna with stunning costumes, vibrant choreography, and unforgettable music by Elton John and Tim Rice. From the iconic 'Hakuna Matata' to the heart-stirring 'Can You Feel the Love Tonight', this award-winning production is an experience for all ages.",
+      "eventDetails": [
+        {
+          "date": "2024-11-12",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 325.00,
+            "orchestra": 225.00,
+            "mainFloor": 175.00,
+            "balcony": 125.00
+          }
+        },
+        {
+          "date": "2024-11-13",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Into the Woods",
+      "category": "Musical",
+      "labels": [ "Drama", "Adventure", "Family Friendly", "Comedy" ],
+      "description": "Step Into the Enchanting World of Into the Woods! Join us for an extraordinary journey beyond happily ever after with Stephen Sondheim’s Into the Woods, the spellbinding musical that weaves together your favorite fairytales in a way you've never seen before!Get ready to follow Cinderella, Little Red Riding Hood, Jack (and his beanstalk), and more as they embark on a magical and thought-provoking adventure. With a stunning score by Sondheim and a witty, heartfelt script, this Tony Award-winning musical explores the consequences of wishes, the bonds of family, and the complexity of our desires.",
+      "eventDetails": [
+        {
+          "date": "2024-09-15",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-09-16",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 325.00,
+            "orchestra": 225.00,
+            "mainFloor": 175.00,
+            "balcony": 125.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Swan Lake",
+      "category": "Ballet",
+      "labels": [ "Tragedy", "Romance", "Spectacle (Featured)", "Family Friendly" ],
+      "description": "Enter the ethereal world of Swan Lake, where love, betrayal, and magic unfold in one of the most beloved ballets of all time. Set to Tchaikovsky’s enchanting score, this breathtaking production tells the tragic story of Prince Siegfried and Odette, a princess cursed to live as a swan by day and a woman by night. With its mesmerizing choreography, graceful swans, and sweeping romanticism, Swan Lake captivates audiences with its haunting beauty and powerful emotion. From the dramatic 'Black Swan Pas de Deux' to the elegant 'Dance of the Cygnets', every moment of this ballet is a testament to the triumph of artistry and passion. Perfect for ballet lovers and newcomers alike, Swan Lake is a timeless journey into a world of elegance, enchantment, and heartache. Don’t miss the chance to witness this iconic ballet live!",
+      "eventDetails": [
+        {
+          "date": "2024-10-01",
+          "time": "18:30",
+          "ticketPrices": {
+            "box": 285.00,
+            "orchestra": 185.00,
+            "mainFloor": 135.00,
+            "balcony": 85.00
+          }
+        },
+        {
+          "date": "2024-10-02",
+          "time": "18:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "John Williams in Concert",
+      "category": "Concert",
+      "labels": [ "Recital", "Spectacle (Featured)" ],
+      "description": "Prepare to be transported to the worlds of epic adventure, heart-pounding action, and magical wonder as the music of John Williams comes to life in a thrilling concert experience. From the soaring themes of Star Wars, the suspenseful notes of Jaws, the wonder of E.T., and the heroic fanfare of Indiana Jones, this concert brings together some of the most unforgettable scores in cinematic history, all composed by the legendary John Williams.  Performed by a world-class orchestra, these iconic pieces will make you relive the emotional moments of your favorite films, from the awe-inspiring to the exhilarating. Whether you're a film buff, a music lover, or a fan of Williams' masterpieces, this is a night of symphonic magic you can't miss! Join us for a once-in-a-lifetime concert! Feel the power of music that has defined generations and captured the imaginations of millions.",
+      "eventDetails": [
+        {
+          "date": "2024-11-05",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 305.00,
+            "orchestra": 205.00,
+            "mainFloor": 155.00,
+            "balcony": 105.00
+          }
+        },
+        {
+          "date": "2024-11-06",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "The Magic Flute",
+      "category": "Opera",
+      "labels": [ "Adventure", "Romance", "Family Friendly", "Comedy" ],
+      "description": "Step into the magical world of Mozart’s The Magic Flute, a fantastical opera filled with enchanting music, love, and adventure. Follow the journey of Prince Tamino as he embarks on a heroic quest to rescue Princess Pamina, armed with only a magical flute and the help of his comedic sidekick, Papageno. Along the way, they must face mystical trials, wicked foes, and uncover the true nature of wisdom and virtue. With its brilliant arias, including the famous Queen of the Night’s show-stopping performance, The Magic Flute blends light-hearted comedy, deep symbolism, and Mozart’s unparalleled musical genius. From its mystical settings to the triumph of love and courage, this opera has captivated audiences for over two centuries. Join us for an unforgettable evening of opera magic, where music and storytelling come together in perfect harmony!",
+      "eventDetails": [
+        {
+          "date": "2024-12-10",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-12-11",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 325.00,
+            "orchestra": 225.00,
+            "mainFloor": 175.00,
+            "balcony": 125.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "West Side Story",
+      "category": "Musical",
+      "labels": [ "Romance", "Tragedy", "Drama" ],
+      "description": "Immerse yourself in the electrifying world of West Side Story, where love, rivalry, and passion collide on the streets of New York. Inspired by Shakespeare’s Romeo and Juliet, this iconic musical tells the story of star-crossed lovers Tony and Maria, caught in the fierce conflict between rival gangs, the Jets and the Sharks. With unforgettable songs like 'Tonight', 'Maria', and 'America', and breathtaking choreography by Jerome Robbins, West Side Story blends stunning dance with Leonard Bernstein’s exhilarating score and Stephen Sondheim’s powerful lyrics. This groundbreaking musical is a vivid portrayal of love, tragedy, and hope, and its themes of racial tension and social conflict remain as relevant today as ever. Whether you're experiencing it for the first time or revisiting a classic, West Side Story promises to captivate with its intense emotion and timeless beauty. Don’t miss the chance to witness this legendary production live on stage!",
+      "eventDetails": [
+        {
+          "date": "2024-10-22",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-10-23",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 340.00,
+            "orchestra": 240.00,
+            "mainFloor": 190.00,
+            "balcony": 140.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "The Rolling Stones",
+      "category": "Concert",
+      "labels": [ "Spectacle (Featured)", "Recital" ],
+      "description": "Get ready for an unforgettable night of pure rock energy as The Rolling Stones bring their iconic sound and electrifying stage presence to the concert of a lifetime! For decades, Mick Jagger, Keith Richards, and the band have defined the spirit of rock 'n' roll with legendary hits like 'Satisfaction', 'Paint It Black', 'Jumpin' Jack Flash', and 'Sympathy for the Devil'. Now, experience the raw power, swagger, and showmanship that have made The Stones one of the greatest rock bands in history. With their timeless music, high-energy performance, and larger-than-life charisma, this is a concert that will have you on your feet, singing along to every classic hit. Whether you're a lifelong fan or new to their music, The Rolling Stones live is a rock 'n' roll experience you won’t want to miss. Get your tickets now for a night of rock history in the making!",
+      "eventDetails": [
+        {
+          "date": "2024-09-20",
+          "time": "21:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-09-21",
+          "time": "21:00",
+          "ticketPrices": {
+            "box": 400.00,
+            "orchestra": 300.00,
+            "mainFloor": 250.00,
+            "balcony": 200.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Giselle",
+      "category": "Ballet",
+      "labels": [ "Tragedy", "Romance", "Spectacle (Featured)", "Drama" ],
+      "description": "Step into a world of ethereal beauty and haunting emotion with Giselle, one of the most enchanting and beloved ballets in the classical repertoire. This timeless masterpiece tells the story of Giselle, a young peasant girl whose innocent love for a nobleman leads to heartache and tragedy. In the first act, Giselle’s pure heart is shattered by betrayal, but her spirit transcends mortal bounds in the second act as she becomes a Wilis, a ghostly figure who must protect other young men from a similar fate. With its delicate choreography, exquisite costumes, and Tchaikovsky’s evocative score, Giselle explores themes of love, forgiveness, and the supernatural. Witness the grace and emotion of this classic ballet, where every movement tells a story and every performance is a testament to the power of dance and music. Join us for a mesmerizing evening of ballet that will leave you spellbound. ",
+      "eventDetails": [
+        {
+          "date": "2024-10-28",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-10-29",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 275.00,
+            "orchestra": 175.00,
+            "mainFloor": 125.00,
+            "balcony": 75.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Moulin Rouge!",
+      "category": "Musical",
+      "labels": [ "Romance", "Spectacle (Featured)", "Drama" ],
+      "description": "Step into the vibrant and exhilarating world of Moulin Rouge! The Musical, where romance and glitz collide in an unforgettable theatrical experience! Set in the bohemian heart of Paris, this spectacular production brings to life the iconic tale of love, ambition, and artistic passion. Follow the tumultuous romance between Christian, a young writer, and Satine, the sparkling star of the Moulin Rouge, as they navigate a world of lavish cabarets, flamboyant costumes, and unforgettable music. With a sensational score featuring hits from artists like Elton John, Lady Gaga, and Dua Lipa, this musical promises to keep you on the edge of your seat with its high-energy dance numbers, emotional depth, and dazzling visuals. Prepare to be swept away by a whirlwind of romance, glamour, and heart-stopping performances that capture the magic of the legendary Parisian nightclub. Don’t miss your chance to experience this breathtaking musical live! Let the magic of the Moulin Rouge ignite your senses and capture your heart.",
+      "eventDetails": [
+        {
+          "date": "2024-11-25",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 305.00,
+            "orchestra": 205.00,
+            "mainFloor": 155.00,
+            "balcony": 105.00
+          }
+        },
+        {
+          "date": "2024-11-26",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "King Lear",
+      "category": "Play",
+      "labels": [ "Drama", "Tragedy" ],
+      "description": "Experience the raw intensity and profound drama of William Shakespeare’s King Lear, one of the Bard's most powerful and enduring tragedies. This timeless play delves into themes of loyalty, madness, and the complexities of familial relationships as it follows the tragic downfall of King Lear. In this gripping tale, Lear's decision to divide his kingdom among his three daughters sets off a chain of events that leads to betrayal, conflict, and chaos. As Lear grapples with his own mistakes and the treachery of those he trusted, the play explores the human condition with devastating clarity and emotional depth.  Featuring a commanding performance by a stellar cast, stunning direction, and a masterful adaptation of Shakespeare's intricate language, King Lear promises a theatrical experience that is both thought-provoking and heart-wrenching. Join us for an evening of Shakespearean drama that will leave you reflecting on the timeless themes of power, justice, and human folly.",
+      "eventDetails": [
+        {
+          "date": "2024-10-17",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-10-18",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 275.00,
+            "orchestra": 175.00,
+            "mainFloor": 125.00,
+            "balcony": 75.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Coldplay: Music of the Spheres Tour",
+      "category": "Concert",
+      "labels": [ "Spectacle (Featured)", "Recital" ],
+      "description": "Prepare to embark on an extraordinary musical journey with Coldplay’s Music of the Spheres Tour, where the band will transport you to otherworldly realms with their mesmerizing sound and dazzling visuals. Immerse yourself in an evening filled with anthems of hope, wonder, and connection as Chris Martin and the band perform tracks from their critically acclaimed album Music of the Spheres. From the soaring energy of 'Higher Power' to the introspective beauty of 'Let Somebody Go', each song promises to be an emotional and uplifting experience. Expect a night of stunning light shows, breathtaking visuals, and an immersive atmosphere that will make you feel like you're part of a cosmic adventure. Coldplay’s innovative stage design and captivating performances will create an unforgettable concert experience that bridges the gap between music and imagination. Don’t miss your chance to witness Coldplay’s magical live show. Secure your tickets now and be part of a concert that promises to be out of this world!",
+      "eventDetails": [
+        {
+          "date": "2024-12-05",
+          "time": "21:00",
+          "ticketPrices": {
+            "box": 305.00,
+            "orchestra": 205.00,
+            "mainFloor": 155.00,
+            "balcony": 105.00
+          }
+        },
+        {
+          "date": "2024-12-06",
+          "time": "21:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Sleeping Beauty",
+      "category": "Ballet",
+      "labels": [ "Family Friendly", "Romance", "Spectacle (Featured)" ],
+      "description": "Step into a fairytale world with Sleeping Beauty, a ballet that has enchanted audiences for generations with its magical story and exquisite choreography. Set to Tchaikovsky’s sublime score, this timeless classic unfolds the enchanting tale of Princess Aurora, who falls into a deep sleep under a wicked fairy's curse, only to be awakened by a prince’s kiss. From the lavish court scenes to the ethereal dance of the fairies, Sleeping Beauty features stunning costumes, graceful movements, and mesmerizing performances that bring the fairytale to life. The ballet’s grandeur and elegance are matched by its beautiful score, including the iconic 'Rose Adagio' and 'Dance of the Sugar Plum Fairy'. Experience the magic of this beloved ballet, where dreams, love, and redemption come together in a spellbinding performance that promises to captivate and delight audiences of all ages. Join us for a night of ballet magic and let yourself be swept away by the beauty of Sleeping Beauty. ",
+      "eventDetails": [
+        {
+          "date": "2024-12-01",
+          "time": "18:00",
+          "ticketPrices": {
+            "box": 290.00,
+            "orchestra": 190.00,
+            "mainFloor": 140.00,
+            "balcony": 90.00
+          }
+        },
+        {
+          "date": "2024-12-02",
+          "time": "18:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Les Misérables",
+      "category": "Musical",
+      "labels": [ "Drama", "Tragedy", "Romance" ],
+      "description": "Experience the grandeur and emotional depth of Les Misérables, the acclaimed musical that brings Victor Hugo’s powerful tale of revolution, love, and sacrifice to life on stage. This sweeping saga unfolds in the turbulent years of post-revolutionary France, following the lives of unforgettable characters as they struggle for justice and redemption. From the heart-wrenching story of Jean Valjean, a man seeking redemption after years of imprisonment, to the fierce determination of Fantine, and the passionate defiance of the students’ revolution, Les Misérables captivates with its stirring score, including classics like 'I Dreamed a Dream', 'On My Own', and 'Do You Hear the People Sing?' With its moving narrative, unforgettable music, and spectacular staging, this musical is a tribute to the human spirit and the quest for freedom. 🎟 Don’t miss your chance to witness this landmark production. Secure your tickets now and be part of a truly transformative theater experience.",
+      "eventDetails": [
+        {
+          "date": "2024-09-28",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 305.00,
+            "orchestra": 205.00,
+            "mainFloor": 155.00,
+            "balcony": 105.00
+          }
+        },
+        {
+          "date": "2024-09-29",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Macbeth",
+      "category": "Play",
+      "labels": [ "Tragedy", "Drama" ],
+      "description": "Step into a world of dark ambition and supernatural intrigue with our electrifying production of Shakespeare's Macbeth. Set in a hauntingly atmospheric Scottish landscape, this performance plunges the audience into a tale of power, prophecy, and madness. In this gripping adaptation, the storied journey of Macbeth, a once-noble warrior turned tyrannical ruler, is brought to life with intense emotional depth and dramatic flair. The performance captures the raw essence of Shakespeare's text, highlighting the complexities of ambition, guilt, and the corrupting influence of unchecked power. With a stellar cast and innovative staging, the production combines traditional elements with modern interpretations, making the classic text resonate with contemporary audiences. Expect striking visual design, a powerful score, and dynamic choreography that enhance the eerie and tumultuous atmosphere of the play. Prepare for a riveting experience as you witness Macbeth’s descent into madness and the unraveling of his world through masterful performances and breathtaking theatrical techniques. This is more than a play; it's an unforgettable journey into the heart of human darkness and ambition.",
+      "eventDetails": [
+        {
+          "date": "2024-10-18",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 270.00,
+            "orchestra": 170.00,
+            "mainFloor": 120.00,
+            "balcony": 70.00
+          }
+        },
+        {
+          "date": "2024-10-19",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Beyoncé Renaissance Tour",
+      "category": "Concert",
+      "labels": [ "Spectacle (Featured)", "Recital" ],
+      "description": "Get ready to experience the ultimate celebration of music and artistry with Beyoncé’s Renaissance Tour, a dazzling live performance that promises to showcase the Queen of Pop at her most electrifying. Prepare for a night filled with powerful vocals, cutting-edge choreography, and a spectacle of visuals that only Beyoncé can deliver. From the vibrant beats of her latest album, Renaissance, to timeless hits that have defined her illustrious career, this tour will feature an unforgettable setlist of anthems that celebrate individuality, empowerment, and joy. Beyoncé’s dynamic stage presence, coupled with her impeccable showmanship and innovative stage design, will make every moment of this concert a thrilling experience. Expect to be captivated by stunning costumes, high-energy performances, and an immersive atmosphere that will leave you inspired and exhilarated. Secure your tickets now for a night of music and magic that only Beyoncé can provide. Join us for an unforgettable journey into the world of Renaissance and celebrate the unparalleled artistry of one of the greatest performers of our time!",
+      "eventDetails": [
+        {
+          "date": "2024-09-27",
+          "time": "21:00",
+          "ticketPrices": {
+            "box": 400.00,
+            "orchestra": 300.00,
+            "mainFloor": 250.00,
+            "balcony": 200.00
+          }
+        },
+        {
+          "date": "2024-09-28",
+          "time": "21:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Giselle",
+      "category": "Ballet",
+      "labels": [ "Tragedy", "Romance", "Spectacle (Featured)", "Drama" ],
+      "description": "Step into a world of ethereal beauty and haunting emotion with Giselle, one of the most enchanting and beloved ballets in the classical repertoire. This timeless masterpiece tells the story of Giselle, a young peasant girl whose innocent love for a nobleman leads to heartache and tragedy. In the first act, Giselle’s pure heart is shattered by betrayal, but her spirit transcends mortal bounds in the second act as she becomes a Wilis, a ghostly figure who must protect other young men from a similar fate. With its delicate choreography, exquisite costumes, and Tchaikovsky’s evocative score, Giselle explores themes of love, forgiveness, and the supernatural. Witness the grace and emotion of this classic ballet, where every movement tells a story and every performance is a testament to the power of dance and music. Join us for a mesmerizing evening of ballet that will leave you spellbound. ",
+      "eventDetails": [
+        {
+          "date": "2024-11-15",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 275.00,
+            "orchestra": 175.00,
+            "mainFloor": 125.00,
+            "balcony": 75.00
+          }
+        },
+        {
+          "date": "2024-11-16",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Rent",
+      "category": "Musical",
+      "labels": [ "Drama", "Romance" ],
+      "description": "Dive into the energetic and emotional world of Rent, Jonathan Larson’s groundbreaking musical that captures the spirit of a generation. Set against the backdrop of New York City’s Lower East Side, this performance brings to life a story of friendship, struggle, and hope amidst the challenges of life and love. Experience the pulse of the city as a diverse group of artists and dreamers navigate the highs and lows of life, grappling with issues of identity, love, and the pursuit of dreams. Through memorable songs and dynamic performances, the show explores themes of community, resilience, and the relentless pursuit of happiness. Our production features a talented cast delivering powerful performances, vibrant choreography, and an infectious score that includes iconic numbers like “Seasons of Love,” “La Vie Bohème,” and “Take Me or Leave Me.” The staging and design capture the gritty, vibrant energy of the city, enhancing the emotional impact of the narrative. Join us for a performance that is both a celebration and a reflection on life’s struggles and joys. Rent is more than a musical; it’s an experience that resonates with audiences, reminding us of the importance of love, community, and living life to the fullest.",
+      "eventDetails": [
+        {
+          "date": "2024-10-22",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 295.00,
+            "orchestra": 195.00,
+            "mainFloor": 145.00,
+            "balcony": 95.00
+          }
+        },
+        {
+          "date": "2024-10-23",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Death of a Salesman",
+      "category": "Play",
+      "labels": [ "Drama", "Tragedy" ],
+      "description": "Witness Arthur Miller’s Death of a Salesman in a performance that captures the raw intensity and emotional depth of this American classic. This compelling drama delves into the life of Willy Loman, a struggling salesman whose pursuit of the American Dream leads to profound personal and familial conflict. Set in the mid-20th century, the play paints a poignant portrait of a man grappling with his own aspirations, societal pressures, and the crushing weight of reality. As Willy’s dreams clash with the stark truths of his life, the performance reveals the complexities of his relationships with his wife, Linda, and his two sons, Biff and Happy. Our production showcases a talented cast delivering powerful performances, bringing to life Miller’s sharp and poignant dialogue with striking emotional authenticity. The staging and design reflect the play’s themes of illusion versus reality, using symbolic elements to enhance the narrative’s impact. Through a blend of intense drama and subtle nuance, Death of a Salesman offers a profound examination of the human condition, the pursuit of success, and the often painful quest for personal fulfillment. Join us for a performance that promises to be both thought-provoking and deeply moving, shedding light on the universal struggles of ambition and identity.",
+      "eventDetails": [
+        {
+          "date": "2024-11-03",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-11-04",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 250.00,
+            "orchestra": 150.00,
+            "mainFloor": 100.00,
+            "balcony": 50.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Billie Eilish World Tour",
+      "category": "Concert",
+      "labels": [ "Spectacle (Featured)", "Recital" ],
+      "description": "Get ready for an unforgettable experience as Billie Eilish embarks on her highly anticipated World Tour, bringing her signature sound and electrifying presence to stages around the globe. This tour promises to be a groundbreaking celebration of her distinctive musical style and artistic vision. Join Billie Eilish as she performs hits from her acclaimed albums, including “When We All Fall Asleep, Where Do We Go?” and “Happier Than Ever,” in a series of high-energy shows that showcase her genre-defying sound and thought-provoking lyrics. Each concert will be a visual and auditory feast, featuring stunning stage design, innovative lighting, and immersive multimedia elements that elevate the concert experience to new heights. Fans can expect a setlist packed with Eilish’s chart-topping singles, fan favorites, and perhaps a few surprises. Her intimate and introspective approach to songwriting, combined with her dynamic live performance style, creates an atmosphere of connection and authenticity that resonates deeply with audiences. Whether you’re a longtime fan or new to her music, Billie Eilish’s World Tour offers a chance to experience her transformative artistry in person. Don’t miss out on this chance to be part of a global celebration of music, creativity, and emotional expression.",
+      "eventDetails": [
+        {
+          "date": "2024-10-20",
+          "time": "20:30",
+          "ticketPrices": {
+            "box": 305.00,
+            "orchestra": 205.00,
+            "mainFloor": 155.00,
+            "balcony": 105.00
+          }
+        },
+        {
+          "date": "2024-10-21",
+          "time": "20:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Swan Lake",
+      "category": "Ballet",
+      "labels": [ "Tragedy", "Romance" ],
+      "description": "Enter the ethereal world of Swan Lake, where love, betrayal, and magic unfold in one of the most beloved ballets of all time. Set to Tchaikovsky’s enchanting score, this breathtaking production tells the tragic story of Prince Siegfried and Odette, a princess cursed to live as a swan by day and a woman by night. With its mesmerizing choreography, graceful swans, and sweeping romanticism, Swan Lake captivates audiences with its haunting beauty and powerful emotion. From the dramatic 'Black Swan Pas de Deux' to the elegant 'Dance of the Cygnets', every moment of this ballet is a testament to the triumph of artistry and passion. Perfect for ballet lovers and newcomers alike, Swan Lake is a timeless journey into a world of elegance, enchantment, and heartache. Don’t miss the chance to witness this iconic ballet live!",
+      "eventDetails": [
+        {
+          "date": "2024-09-22",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-09-23",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 285.00,
+            "orchestra": 185.00,
+            "mainFloor": 135.00,
+            "balcony": 85.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "The Phantom of the Opera",
+      "category": "Musical",
+      "labels": [ "Romance", "Drama", "Spectacle (Featured)" ],
+      "description": "Step into the enchanting world of The Phantom of the Opera, Andrew Lloyd Webber’s iconic musical that captivates with its grandeur, romance, and haunting beauty. This mesmerizing performance invites you into the opulent Paris Opera House, where secrets lurk behind every curtain and love is intertwined with intrigue. Experience the timeless story of the mysterious Phantom, a disfigured musical genius who lives in the shadows of the opera house, and his obsession with Christine Daaé, a talented young soprano. As Christine rises to stardom under the Phantom’s unseen guidance, a love triangle ensues with the charming Raoul, leading to a dramatic and emotional conflict. Our production features a stellar cast and breathtaking performances of beloved songs like “The Music of the Night,” “All I Ask of You,” and “Masquerade.” The stunning set designs and elaborate costumes transport you to a world of grandeur and suspense, while the dramatic lighting and orchestral score enhance the atmosphere of mystery and romance. With its combination of powerful vocals, dramatic storytelling, and lavish production values, The Phantom of the Opera promises an unforgettable theatrical experience that captures the heart and imagination. Prepare to be swept away by this enduring masterpiece, where passion and mystery come alive in every note.",
+      "eventDetails": [
+        {
+          "date": "2024-10-10",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 310.00,
+            "orchestra": 210.00,
+            "mainFloor": 160.00,
+            "balcony": 110.00
+          }
+        },
+        {
+          "date": "2024-10-12",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "La Bohème",
+      "category": "Opera",
+      "labels": [ "Romance", "Tragedy", "Drama" ],
+      "description": "Immerse yourself in the timeless beauty of Puccini’s La Bohème, a lyrical opera that captures the essence of youthful romance and artistic aspiration. Set in the bohemian quarters of 19th-century Paris, this performance takes you on an emotional journey through the lives of a group of struggling artists and their poignant love stories. Experience the heartwarming and heartbreaking tale of Rodolfo, a poet, and Mimì, a seamstress, as their passionate romance unfolds amidst the challenges of poverty and illness. The opera beautifully intertwines their love with the lives of their friends, each dealing with their own dreams and desires. Our production features a talented ensemble of opera stars, delivering breathtaking performances of Puccini’s exquisite arias and duets. The staging captures the vibrant yet melancholic atmosphere of Parisian life, with intricate set designs and evocative costumes that transport you to a bygone era. From the stirring opening scene in the garret to the poignant conclusion, La Bohème is a masterful exploration of love, friendship, and the trials of artistic ambition. Join us for a performance that is both deeply moving and exquisitely beautiful, as Puccini’s masterpiece comes to life in a breathtaking theatrical experience.",
+      "eventDetails": [
+        {
+          "date": "2024-11-01",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 305.00,
+            "orchestra": 205.00,
+            "mainFloor": 155.00,
+            "balcony": 105.00
+          }
+        },
+        {
+          "date": "2024-11-02",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Hamilton",
+      "category": "Musical",
+      "labels": [ "Drama", "Adventure" ],
+      "description": "Get ready for a groundbreaking theatrical experience with Hamilton, Lin-Manuel Miranda’s revolutionary musical that redefines the boundaries of musical theater. This high-energy performance brings to life the extraordinary story of Alexander Hamilton, one of America's founding fathers, through a fresh and dynamic blend of hip-hop, R&B, and traditional show tunes. Set against the backdrop of the American Revolution and the founding of the United States, Hamilton explores the life and legacy of Hamilton, from his early days as an ambitious immigrant to his pivotal role in shaping the nation. With its innovative score and sharp, contemporary choreography, the show reimagines historical figures and events with a modern sensibility, making history feel both relevant and exhilarating. Our production features a stellar cast performing Miranda’s electrifying score, including unforgettable numbers like “My Shot,” “The Room Where It Happens,” and “Wait For It.” The vibrant set design, striking costumes, and inventive staging bring the energy and intensity of the era to life, creating a visually stunning and emotionally powerful experience. Join us for a performance of Hamilton that promises to be both thought-provoking and exhilarating, celebrating the ideals of revolution, ambition, and the pursuit of freedom through a musical lens that will leave you inspired and in awe.",
+      "eventDetails": [
+        {
+          "date": "2024-09-25",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-09-26",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 380.00,
+            "orchestra": 280.00,
+            "mainFloor": 230.00,
+            "balcony": 180.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Romeo and Juliet",
+      "category": "Play",
+      "labels": [ "Romance", "Tragedy", "Drama" ],
+      "description": "Experience the enduring power of Shakespeare’s Romeo and Juliet in a performance that brings the classic tale of star-crossed lovers to vivid, dramatic life. Set in the vibrant streets of Verona, this production explores the intense passions and tragic consequences of a love that defies family feuds and societal expectations. Join us as we follow the poignant journey of Romeo Montague and Juliet Capulet, whose love blossoms amidst the conflict and animosity between their families. Their romance, both tender and tumultuous, is set against a backdrop of feuding factions, chance encounters, and fateful decisions. Our production features a talented cast delivering Shakespeare’s lyrical dialogue with emotional depth and clarity. The staging incorporates evocative set designs and costumes that transport the audience to Renaissance Italy, enhancing the dramatic tension and romantic atmosphere of the play. From the exuberant joy of their first meeting to the heartrending conclusion, Romeo and Juliet offers a powerful exploration of love, fate, and the impact of familial loyalty. This is more than a performance; it’s a timeless story that resonates with every generation, capturing the essence of youthful passion and the poignancy of loss. ",
+      "eventDetails": [
+        {
+          "date": "2024-10-15",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-10-16",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 275.00,
+            "orchestra": 175.00,
+            "mainFloor": 125.00,
+            "balcony": 75.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Adele Live",
+      "category": "Concert",
+      "labels": [ "Recital", "Spectacle (Featured)" ],
+      "description": "Prepare to be swept away by the unparalleled voice and emotional depth of Adele in her highly anticipated live concert. Experience a night of musical magic as the global sensation takes the stage to perform her most beloved hits and showcase the raw power and sincerity that have made her one of the most celebrated artists of our time. From the moment Adele steps onto the stage, you'll be enveloped in a concert experience that combines her powerhouse vocals with intimate storytelling. With a setlist featuring classics like “Rolling in the Deep,” “Someone Like You,” and “Hello,” each song is delivered with the authenticity and passion that have become her trademark. The concert features a stunning production, with elegant stage design, captivating lighting, and a full orchestra that complements Adele’s voice perfectly. Her charismatic presence and engaging rapport with the audience create an atmosphere of warmth and connection, making each performance a memorable and personal experience. Join us for a night where Adele’s extraordinary talent shines, and her music resonates deeply with fans old and new. This concert promises an evening of unforgettable moments, showcasing why Adele remains one of the most powerful and emotive voices in music today.",
+      "eventDetails": [
+        {
+          "date": "2024-09-30",
+          "time": "21:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-10-01",
+          "time": "21:00",
+          "ticketPrices": {
+            "box": 330.00,
+            "orchestra": 230.00,
+            "mainFloor": 180.00,
+            "balcony": 130.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "The Nutcracker",
+      "category": "Ballet",
+      "labels": [ "Family Friendly", "Romance", "Holiday" ],
+      "description": "Step into a world of enchantment and wonder with The Nutcracker, a timeless ballet that captivates audiences of all ages. Tchaikovsky’s beloved score and the imaginative choreography bring to life a magical holiday classic that has become a cherished tradition for families and ballet enthusiasts alike. Set against the backdrop of a festive Christmas Eve, The Nutcracker tells the enchanting story of Clara, a young girl whose toy nutcracker comes to life and takes her on a fantastical journey. From the whimsical battle between the Nutcracker and the Mouse King to the mesmerizing dance of the Sugar Plum Fairy, the ballet transports you to a dreamlike realm filled with charming characters and spectacular performances. Our production features a talented cast of dancers, breathtaking costumes, and a beautifully designed set that captures the magic and splendor of the story. The captivating score, performed by a live orchestra, enhances the visual splendor of the ballet, creating an immersive and unforgettable experience. Whether it’s your first time or a cherished annual tradition, The Nutcracker offers a delightful blend of grace, fantasy, and holiday spirit. Join us for a performance that promises to fill your heart with joy and your imagination with wonder.",
+      "eventDetails": [
+        {
+          "date": "2024-12-15",
+          "time": "18:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-12-16",
+          "time": "18:00",
+          "ticketPrices": {
+            "box": 300.00,
+            "orchestra": 200.00,
+            "mainFloor": 150.00,
+            "balcony": 100.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Wicked",
+      "category": "Musical",
+      "labels": [ "Adventure", "Family Friendly", "Spectacle (Featured)", "Drama" ],
+      "description": "Prepare to be spellbound by Wicked, the critically acclaimed musical that reimagines the beloved story of The Wizard of Oz from a fresh and captivating perspective. This enchanting production delves into the untold story of the witches of Oz, exploring themes of friendship, courage, and self-discovery in a dazzling theatrical experience. Set in the magical land of Oz, Wicked tells the story of Elphaba, the misunderstood 'Wicked Witch of the West', and Glinda, the popular 'Good Witch'. Through a series of captivating songs and dynamic performances, the musical reveals the complex relationship between these two characters and the events that lead them to become the iconic figures known from L. Frank Baum’s classic tale. Featuring a powerful score by Stephen Schwartz, including hits like “Defying Gravity,” “Popular,” and “For Good,” the production combines breathtaking choreography, elaborate costumes, and a visually stunning set design to bring the world of Oz to life. The talented cast delivers heartfelt performances that resonate with both humor and poignancy, making the story accessible and compelling for audiences of all ages. Join us for a performance of Wicked that promises to be an unforgettable journey filled with wonder, excitement, and the magic of discovering that true heroism often lies in the most unexpected places.",
+      "eventDetails": [
+        {
+          "date": "2024-11-18",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 325.00,
+            "orchestra": 225.00,
+            "mainFloor": 175.00,
+            "balcony": 125.00
+          }
+        },
+        {
+          "date": "2024-11-19",
+          "time": "19:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "Carmen",
+      "labels": [ "Drama", "Tragedy", "Romance" ],
+      "description": "Experience the intense drama and unforgettable music of Georges Bizet’s Carmen, a masterpiece that has captivated audiences for generations. This opera weaves a tale of passion, betrayal, and tragedy set against the vibrant backdrop of 19th-century Spain. In this gripping performance, follow the story of Carmen, a fiery and enigmatic gypsy who defies societal norms and captivates the hearts of those around her. Her tumultuous relationship with Don José, a soldier whose love for Carmen leads him down a dark path, forms the core of this dramatic narrative. The opera explores themes of freedom, desire, and the consequences of unbridled passion. Featuring some of the most iconic arias in opera, including “Habanera” and “Toreador Song,” Carmen is celebrated for its evocative score and dramatic intensity. Our production brings Bizet’s music to life with a talented cast delivering powerful performances, complemented by a stunning set design and evocative costumes that transport you to the heart of Seville. Immerse yourself in a world of dramatic tension and lyrical beauty as Carmen unfolds on stage, offering a powerful and emotional experience that highlights the complexity of human desires and the tragic consequences of love.",
+      "category": "Opera",
+      "eventDetails": [
+        {
+          "date": "2024-10-20",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 340.00,
+            "orchestra": 240.00,
+            "mainFloor": 190.00,
+            "balcony": 140.00
+          }
+        },
+        {
+          "date": "2024-10-21",
+          "time": "19:30",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        }
+      ]
+    },
+    {
+      "eventName": "The Book of Mormon",
+      "category": "Musical",
+      "labels": [ "Comedy", "Adventure" ],
+      "description": "Prepare for a night of uproarious laughter and heartfelt moments with The Book of Mormon, the Tony Award-winning musical from the creators of South Park and Avenue Q. This irreverent and brilliantly crafted show takes you on a comedic and enlightening journey through faith, friendship, and self-discovery. Follow the story of Elder Price and Elder Cunningham, two missionaries who are sent to a remote village in Uganda on their mission to spread the teachings of the Church of Jesus Christ of Latter-day Saints. What unfolds is a hilariously unconventional adventure that challenges their beliefs and tests their resolve in unexpected and endearing ways. With a score that blends catchy tunes with clever lyrics, The Book of Mormon features standout numbers like “Hello,” “I Believe,” and “Hasa Diga Eebowai.” The musical’s sharp satire is balanced with genuine warmth and memorable characters, creating a performance that is both entertaining and thought-provoking. Our production showcases a talented cast, energetic choreography, and dynamic staging, ensuring that each performance is a high-octane, laugh-out-loud experience. Join us for a show that pushes boundaries and celebrates the power of laughter, proving that faith and humor can go hand in hand.",
+      "eventDetails": [
+        {
+          "date": "2024-12-05",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 350.00,
+            "orchestra": 250.00,
+            "mainFloor": 200.00,
+            "balcony": 150.00
+          }
+        },
+        {
+          "date": "2024-12-06",
+          "time": "20:00",
+          "ticketPrices": {
+            "box": 305.00,
+            "orchestra": 205.00,
+            "mainFloor": 155.00,
+            "balcony": 105.00
+          }
+        }
+      ]
+    }
+  ]
+}
