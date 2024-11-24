@@ -6,9 +6,9 @@ export const CartContext = React.createContext();
 export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
 
-    const addToCart = (eventName, eventDate, ticketsToAdd) => {
+    const addToCart = (eventName, eventDate, ticketsToAdd, eventDescription) => {
         const decodedEventName = decodeURIComponent(eventName);
-        console.log("Adding to cart:", { decodedEventName, eventDate, ticketsToAdd });
+        console.log("Adding to cart:", { decodedEventName, eventDate, ticketsToAdd, eventDescription });
         
         setCartItems(prevCart => {
             const updatedCart = [...prevCart];
@@ -32,7 +32,9 @@ export const CartProvider = ({ children }) => {
                     eventName: decodedEventName,
                     eventDate,
                     tickets: ticketsToAdd,
+                    description: eventDescription,
                 });
+
             }
             console.log("Updated cart:", updatedCart);
             return updatedCart;
