@@ -9,10 +9,10 @@ function Tickets() {
     const navigate = useNavigate();
     const { eventName, eventDate } = useParams();
 
-    const [boxTickets, setBoxTickets] = useState(0);
-    const [orchestraTickets, setOrchestraTickets] = useState(0);
-    const [mainFloorTickets, setMainFloorTickets] = useState(0);
-    const [balconyTickets, setBalconyTickets] = useState(0);
+    //const [boxTickets, setBoxTickets] = useState(0);
+    //const [orchestraTickets, setOrchestraTickets] = useState(0);
+    //const [mainFloorTickets, setMainFloorTickets] = useState(0);
+    //const [balconyTickets, setBalconyTickets] = useState(0);
     const [ticketQuantities, setTicketQuantities] = useState({
         box: 0,
         orchestra: 0,
@@ -20,6 +20,7 @@ function Tickets() {
         balcony: 0,
     });
     const [ticketPrices, setTicketPrices] = useState(null); // State to hold ticket prices
+    const [eventDescription, setEventDescription] = useState(""); // State to hold event description
     const [error, setError] = useState(null); // State for error handling
 
    
@@ -34,14 +35,20 @@ function Tickets() {
                 return response.json();
             })
             .then(data => {
+                console.log('Fetched Data:', data); // Log fetched data
                 const formattedEventName = decodeURIComponent(eventName).replace(/-/g, ' ');
                 const event = data.events.find(e => e.eventName.toLowerCase() === formattedEventName.toLowerCase());
 
                 if (event) {
+                    console.log('Selected Event:', event); // Debug selected event
                     // Assuming the ticketPrices are in the event's details
+                    setEventDescription(event.description || "No description available for this event.");
                     const eventDetail = event.eventDetails.find(detail => detail.date === eventDate);
                     if (eventDetail) {
+                        console.log('Event Detail:', eventDetail); // Debug selected event
                         setTicketPrices(eventDetail.ticketPrices);
+                        const existingQuantities = getTicketQuantities(formattedEventName, eventDate);
+                        setTicketQuantities(prev => ({ ...prev, ...existingQuantities }));
                     } else {
                         setError('Event details not found for the specified date.');
                     }
@@ -89,7 +96,7 @@ function Tickets() {
             return;
         }
     
-        addToCart(decodeURIComponent(eventName).replace(/-/g, ' '), eventDate, ticketsToAdd);
+        addToCart(decodeURIComponent(eventName).replace(/-/g, ' '), eventDate, ticketsToAdd, eventDescription);
         navigate(`/cart/${encodeURIComponent(eventName)}/${encodeURIComponent(eventDate)}`);
     };
 
@@ -101,53 +108,49 @@ function Tickets() {
             <h1>Select Your Tickets</h1>
             <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
                 Event: {eventName.replace(/-/g, ' ')} </h3>
+            <p style={{ textAlign: 'left', fontStyle: 'italic', color: '#555' }}>
+                {eventDescription}
+            </p>
             <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
                 Date: {eventDate} </h3>
 
             {error && <p className="error">{error}</p>}
 
             {ticketPrices ? (
-                <>
-                    <div className="ticket-option">
-                        <label>Box Tickets (${ticketPrices.box.toFixed(2)} each):</label>
-                        <select value={ticketQuantities.box} onChange={(e) => handleQuantityChange('box', Number(e.target.value))}>
-                            {[...Array(11).keys()].map(num => (
-                                <option key={num} value={num}>{num}</option>
+                <div>
+                    <table className="tickets-table">
+                        <thead>
+                            <tr>
+                                <th>Ticket Type</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {Object.keys(ticketPrices).map(type => (
+                                <tr key={type}>
+                                    <td style={{ textTransform: 'capitalize' }}>{type}</td>
+                                    <td>${ticketPrices[type].toFixed(2)}</td>
+                                    <td>
+                                        <input
+                                            type="number"
+                                            value={ticketQuantities[type]}
+                                            min="0"
+                                            onChange={(e) =>
+                                                handleQuantityChange(type, parseInt(e.target.value) || 0)
+                                            }
+                                        />
+                                    </td>
+                                    <td>
+                                        ${(
+                                            ticketPrices[type] * ticketQuantities[type]
+                                        ).toFixed(2)}
+                                    </td>
+                                </tr>
                             ))}
-                        </select>
-                    </div>
-                    <br />
-
-                    <div className="ticket-option">
-                        <label>Orchestra Tickets (${ticketPrices.orchestra.toFixed(2)} each):</label>
-                        <select value={ticketQuantities.orchestra} onChange={(e) => handleQuantityChange('orchestra', Number(e.target.value))}>
-                            {[...Array(11).keys()].map(num => (
-                                <option key={num} value={num}>{num}</option>
-                            ))}
-                        </select>
-                    </div>
-                    <br />
-
-                    <div className="ticket-option">
-                        <label>Main Floor Tickets (${ticketPrices.mainFloor.toFixed(2)} each):</label>
-                        <select value={ticketQuantities.mainFloor} onChange={(e) => handleQuantityChange('mainFloor', Number(e.target.value))}>
-                            {[...Array(11).keys()].map(num => (
-                                <option key={num} value={num}>{num}</option>
-                            ))}
-                        </select>
-                    </div>
-                    <br />
-
-                    <div className="ticket-option">
-                        <label>Balcony Tickets (${ticketPrices.balcony.toFixed(2)} each):</label>
-                        <select value={ticketQuantities.balcony} onChange={(e) => handleQuantityChange('balcony', Number(e.target.value))}>
-                            {[...Array(11).keys()].map(num => (
-                                <option key={num} value={num}>{num}</option>
-                            ))}
-                        </select>
-                    </div>
-                    <br />
-
+                        </tbody>
+                    </table>
                     <button
                         style={{
                             display: 'block',
@@ -159,12 +162,13 @@ function Tickets() {
                             border: 'none',
                             borderRadius: '8px',
                             cursor: 'pointer',
+                            marginTop: '20px',
                         }}
                         onClick={handleAddToCart}
                     >
                         Add to Cart
                     </button>
-                </>
+                </div>
             ) : (
                 <p>Loading ticket prices...</p>
             )}
