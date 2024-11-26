@@ -9,11 +9,11 @@ export const CartProvider = ({ children }) => {
     const addToCart = (eventName, eventDate, ticketsToAdd, eventDescription) => {
         const decodedEventName = decodeURIComponent(eventName);
         console.log("Adding to cart:", { decodedEventName, eventDate, ticketsToAdd, eventDescription });
-        
+
         setCartItems(prevCart => {
             const updatedCart = [...prevCart];
             const existingEventIndex = updatedCart.findIndex(item => item.eventName === decodedEventName && item.eventDate === eventDate);
-    
+
             if (existingEventIndex > -1) {
                 const existingEvent = updatedCart[existingEventIndex];
                 ticketsToAdd.forEach(ticket => {
@@ -43,7 +43,7 @@ export const CartProvider = ({ children }) => {
 
     const getTicketQuantities = (eventName, eventDate) => {
         const eventCart = cartItems.find(item => item.eventName === decodeURIComponent(eventName) && item.eventDate === eventDate);
-        
+
         // Default values for ticket types
         const defaultQuantities = {
             box: 0,
@@ -61,14 +61,17 @@ export const CartProvider = ({ children }) => {
         }
         return defaultQuantities; // Return default quantities if eventCart is not found
     };
-    
+
 
     const resetCart = () => setCartItems([]); // Function to reset cart
 
+    const getTotalEventCount = () => {
+        return cartItems;
+    };
+
     return (
-        <CartContext.Provider value={{ cartItems, addToCart, resetCart, getTicketQuantities }}>
+        <CartContext.Provider value={{ cartItems, addToCart, resetCart, getTicketQuantities, getTotalEventCount }}>
             {children}
         </CartContext.Provider>
     );
 };
-
