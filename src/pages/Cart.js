@@ -14,31 +14,38 @@ function Cart() {
     const [loading, setLoading] = useState(true);
     const [ticketPrices, setTicketPrices] = useState(null);
     const [showModal, setShowModal] = useState(false);
+    const [expandedDescriptions, setExpandedDescriptions] = useState({});
 
+
+    // Load specific event details only if eventName and eventDate are provided
     useEffect(() => {
-        fetch(`${process.env.PUBLIC_URL}/events-mock-data.json`)
-            .then(response => response.json())
-            .then(data => {
-                const formattedEventName = decodeURIComponent(eventName).replace(/-/g, ' ');
-                const event = data.events.find(e => e.eventName.toLowerCase() === formattedEventName.toLowerCase());
-                if (event) {
-                    const eventDetail = event.eventDetails.find(detail => detail.date === eventDate);
-                    if (eventDetail) {
-                        setTicketPrices(eventDetail.ticketPrices);
-                        setEvent(event);
+        if (eventName && eventDate) {
+            fetch(`${process.env.PUBLIC_URL}/events-mock-data.json`)
+                .then(response => response.json())
+                .then(data => {
+                    const formattedEventName = decodeURIComponent(eventName).replace(/-/g, ' ');
+                    const event = data.events.find(e => e.eventName.toLowerCase() === formattedEventName.toLowerCase());
+                    if (event) {
+                        const eventDetail = event.eventDetails.find(detail => detail.date === eventDate);
+                        if (eventDetail) {
+                            setTicketPrices(eventDetail.ticketPrices);
+                            setEvent(event);
+                        } else {
+                            setError('Event details not found for the specified date.');
+                        }
                     } else {
-                        setError('Event details not found for the specified date.');
+                        setError('Event not found.');
                     }
-                } else {
-                    setError('Event not found.');
-                }
-                setLoading(false);
-            })
-            .catch(err => {
-                console.error(err);
-                setError('Error fetching ticket prices.');
-                setLoading(false);
-            });
+                    setLoading(false);
+                })
+                .catch(err => {
+                    console.error(err);
+                    setError('Error fetching ticket prices.');
+                    setLoading(false);
+                });
+        } else {
+            setLoading(false); // No eventName or eventDate provided; skip loading
+        }
     }, [eventName, eventDate]);
 
     if (loading) return <p>Loading...</p>;
@@ -47,12 +54,12 @@ function Cart() {
     const handleTicketChange = (ticketType, quantity, eventIndex) => {
         const ticketQuantity = parseInt(quantity, 10) || 0;
         const ticketPrice = ticketPrices?.[ticketType] || 0;
-        
+
         // Get the event and update the ticket quantities
         const updatedCartItems = [...cartItems];
         const updatedTickets = [...updatedCartItems[eventIndex].tickets];
         const ticketIndex = updatedTickets.findIndex(ticket => ticket.type === ticketType);
-        
+
         if (ticketIndex >= 0) {
             // If ticket already exists, update the quantity
             updatedTickets[ticketIndex].quantity = ticketQuantity;
@@ -64,12 +71,20 @@ function Cart() {
                 price: ticketPrice
             });
         }
-        
+
         updatedCartItems[eventIndex].tickets = updatedTickets;
 
         // Update the cart context with the new tickets array
         addToCart(updatedCartItems[eventIndex].eventName, updatedCartItems[eventIndex].eventDate, updatedTickets, updatedCartItems[eventIndex].description);
     };
+
+    const handleReadMore = (eventIndex) => {
+        setExpandedDescriptions((prevState) => ({
+            ...prevState,
+            [eventIndex]: !prevState[eventIndex], // Toggle the expanded state for the specific event
+        }));
+    };
+
 
     const orderSummary = Array.isArray(cartItems) ? cartItems.map(event => {
         const tickets = event.tickets || [];
@@ -112,99 +127,98 @@ function Cart() {
     const closeModal = () => {
         setShowModal(false);
     };
+    
 
     return (
         <div className="cart-page">
-            <h1>Your Cart</h1>
-            {cartItems.length === 0 ? (
-                <p>Your cart is empty.</p>
-            ) : (
-                cartItems.map((event, eventIndex) => (
-                    <div key={`${event.eventName}-${eventIndex}`} className="cart-event-section">
-                        <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
-                            Event: {event.eventName.replace(/-/g, ' ')}
-                        </h3>
-                        <p style={{ fontStyle: 'italic', marginTop: '-10px', marginBottom: '15px', textAlign: 'left' }}>
-                            {event.description || 'No description available for this event.'}
-                        </p>
-                        <h3 style={{ textTransform: 'capitalize', textAlign: 'left' }}>
-                            Date: {event.eventDate}
-                        </h3>
-                        <table className="tickets-table">
-                            <thead>
-                                <tr>
-                                    <th>Ticket Type</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {["box", "orchestra", "mainFloor", "balcony"].map(type => {
-                                    const ticket = event.tickets?.find(t => t.type === type) || { quantity: 0, price: ticketPrices?.[type] || 0 };
-                                    return (
-                                        <tr key={type}>
-                                            <td style={{ textTransform: 'capitalize' }}>{type}</td>
-                                            <td>${ticket.price.toFixed(2)}</td>
-                                            <td>
-                                                <input
-                                                    type="number"
-                                                    min="0"
-                                                    value={ticket.quantity}
-                                                    onChange={(e) => handleTicketChange(type, e.target.value, eventIndex)}
-                                                    style={{
-                                                        width: '60px',
-                                                        padding: '5px',
-                                                        textAlign: 'center',
-                                                        borderRadius: '4px',
-                                                        border: '1px solid #ccc',
-                                                    }}
-                                                />
-                                            </td>
-                                            <td>${(ticket.quantity * ticket.price).toFixed(2)}</td>
-                                        </tr>
-                                    );
-                                })}
-                            </tbody>
-                        </table>
-                    </div>
-                ))
-            )}
-            <h2>Total Price: ${totalPrice.toFixed(2)}</h2>
-            <div style={{ display: 'flex', gap: '10px' }}>
-                <button
-                    style={{
-                        padding: '10px 20px',
-                        fontSize: '16px',
-                        fontWeight: 'bold',
-                        backgroundColor: '#FF6700',
-                        color: 'white',
-                        border: 'none',
-                        borderRadius: '8px',
-                        cursor: 'pointer',
-                    }}
-                    onClick={handlePurchase}
-                >
+            <div className="cart-contents">
+                <h1>Your Cart</h1>
+                {cartItems.length === 0 ? (
+                    <p>Your cart is empty.</p>
+                ) : (
+                    cartItems.map((event, eventIndex) => (
+                        <div key={`${event.eventName}-${eventIndex}`} className="cart-event-section">
+                            {/* Event Title */}
+                            <h3 className="event-title">
+                                {event.eventName.replace(/-/g, ' ')}
+                            </h3>
+
+                            {/* Collapsible Description */}
+                            <div
+                                className={`collapsible-description ${expandedDescriptions[eventIndex] ? 'expanded' : ''
+                                    }`}
+                            >
+                                {event.description || 'No description available for this event.'}
+                            </div>
+                            <span
+                                className="read-more-toggle"
+                                onClick={() => handleReadMore(eventIndex)}
+                            >
+                                {expandedDescriptions[eventIndex] ? 'Read Less' : 'Read More'}
+                            </span>
+
+
+                            {/* Event Details */}
+                            <div className="event-details-highlight">
+                                <p className="event-venue">
+                                    Where: The Event Venue, 5678 Broadway Ln, XX 12345
+                                </p>
+                                <p className="event-date-time">
+                                    When: {event.eventDate}
+                                </p>
+                            </div>
+
+                            {/* Ticket Table */}
+                            <table className="tickets-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ticket Type</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {["box", "orchestra", "mainFloor", "balcony"].map(type => {
+                                        const ticket = event.tickets?.find(t => t.type === type) || { quantity: 0, price: ticketPrices?.[type] || 0 };
+                                        return (
+                                            <tr key={type}>
+                                                <td>{type}</td>
+                                                <td>${ticket.price.toFixed(2)}</td>
+                                                <td>
+                                                    <input
+                                                        type="number"
+                                                        min="0"
+                                                        value={ticket.quantity}
+                                                        onChange={(e) => handleTicketChange(type, e.target.value, eventIndex)}
+                                                        className="ticket-quantity-input"
+                                                    />
+                                                </td>
+                                                <td>${(ticket.quantity * ticket.price).toFixed(2)}</td>
+                                            </tr>
+                                        );
+                                    })}
+                                </tbody>
+                            </table>
+                        </div>
+                    ))
+                )}
+            </div>
+
+            {/* Fixed Footer for Total Price */}
+            <div className="fixed-footer-total">
+                <span className="total-label">Total Price: ${totalPrice.toFixed(2)}</span>
+                <button className="cart-buttons" onClick={handlePurchase}>
                     Purchase
                 </button>
                 <Link to={HOME_PATH}>
-                    <button
-                        style={{
-                            padding: '10px 20px',
-                            fontSize: '16px',
-                            fontWeight: 'bold',
-                            backgroundColor: '#FF6700',
-                            color: 'white',
-                            border: 'none',
-                            borderRadius: '8px',
-                            cursor: 'pointer',
-                        }}
-                    >
+                    <button className="cart-buttons">
                         Add More Tickets
                     </button>
                 </Link>
             </div>
 
+            {/* Confirmation Modal */}
             {showModal && (
                 <div className="modal-overlay">
                     <div className="modal-content">
@@ -227,6 +241,7 @@ function Cart() {
             )}
         </div>
     );
+
 }
 
 export default Cart;

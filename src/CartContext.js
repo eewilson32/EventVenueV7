@@ -61,14 +61,17 @@ export const CartProvider = ({ children }) => {
         }
         return defaultQuantities; // Return default quantities if eventCart is not found
     };
-    
+       
 
     const resetCart = () => setCartItems([]); // Function to reset cart
 
+    const getTotalEventCount = () => {
+        return cartItems; 
+    };
+
     return (
-        <CartContext.Provider value={{ cartItems, addToCart, resetCart, getTicketQuantities }}>
+        <CartContext.Provider value={{ cartItems, addToCart, resetCart, getTicketQuantities, getTotalEventCount }}>
             {children}
         </CartContext.Provider>
     );
 };
-
