@@ -77,7 +77,7 @@ function AppContent({ navigationHistory, setNavigationHistory }) {
         <>
             <div style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
                 <Header navigationHistory={navigationHistory} />
-                <div className="breadcrumb" style={{ backgroundColor: '#778899', padding: '10px', color: 'white', fontSize: '18px' }}>
+                <div className="breadcrumb">
                     {breadcrumb.length > 0 ? breadcrumb : "Home"}
                 </div>
             </div>

@@ -1,8 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import '../styles.css';
-import { Link, useLocation } from 'react-router-dom'; // If you're using react-router for navigation
+import { Link } from 'react-router-dom';
+import { CartContext } from '../CartContext';
+import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
+import { IoTicketSharp } from "react-icons/io5"; // Import the Ticket icon
 
 function Header({ navigationHistory }) {
+  const { cartItems } = useContext(CartContext); // Access cart items
+
+  // Calculate total item count
+  const itemCount = cartItems.length; // Count unique events
 
 
   return (
@@ -10,8 +17,6 @@ function Header({ navigationHistory }) {
       <nav>
         <ul className="menu">
           <li><Link to="/EventVenueV7">Home</Link></li>
-
-          {/* Dropdown for "Find Events" */}
           <li className="dropdown">
             <a href="#">Find Events</a>
             <ul className="dropdown-menu">
@@ -22,8 +27,6 @@ function Header({ navigationHistory }) {
               <li><Link to="/events/concerts">Find Concerts</Link></li>
             </ul>
           </li>
-
-          {/* Dropdown for "More Information" */}
           <li className="dropdown">
             <a href="#">Find More Information</a>
             <ul className="dropdown-menu">
@@ -33,23 +36,28 @@ function Header({ navigationHistory }) {
               <li><a href="#">Directions</a></li>
             </ul>
           </li>
-
-          {/* Dropdown for "Account" */}
           <li className="dropdown">
             <a href="#">Account</a>
             <ul className="dropdown-menu">
               <li><a href="#">Sign-Up/Login</a></li>
               <li><a href="#">Saved Events</a></li>
-              <li><a href="#">Your Cart</a></li>
               <li><a href="#">Purchase History</a></li>
             </ul>
           </li>
+          {/* Add cart icon */}
+          <li className="cart-icon">
+            <Link to="/cart">
+              <FaShoppingCart className="cart" />
+              {itemCount > 0 && (
+                <span className="cart-count">
+                  <IoTicketSharp className="ticket-icon" />
+                  <span className="item-count">{itemCount}</span>
+                </span>
+              )}
+            </Link>
+          </li>
         </ul>
-
-
-
       </nav>
-
     </header>
   );
 }
